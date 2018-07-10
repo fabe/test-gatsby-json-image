@@ -1,10 +1,23 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# test-gatsby-json-image
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+Querying relative paths of images seems to work, however they result in null.
+
+```graphql
+{
+  contentJson {
+    image {
+      id
+    }
+  }
+}
 ```
 
-## Running in development
-`gatsby develop`
+```json
+{
+  "data": {
+    "contentJson": {
+      "image": null
+    }
+  }
+}
+```
